@@ -1,0 +1,11 @@
+package com.example;
+
+monitor MyFirstMonitor {
+	action onload() {
+		monitor.subscribe("input");
+		on all Trigger() as t {
+			log "Received trigger";
+			send Msg("Hello World") to "output";
+		}
+	}
+}

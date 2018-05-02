@@ -1,0 +1,8 @@
+package com.example;
+
+event Trigger {}
+
+event Msg {
+	string value;
+}
+
