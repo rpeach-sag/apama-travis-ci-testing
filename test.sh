@@ -1,3 +1,3 @@
-. $APAMA_BIN/apama_env
+. ./Apama/bin/apama_env
 cd test
 pysys run

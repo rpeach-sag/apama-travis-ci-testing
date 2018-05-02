@@ -1,2 +1,2 @@
-. $APAMA_BIN/apama_env
+. ./Apama/bin/apama_env
 engine_deploy --outputDeployDir output .project
