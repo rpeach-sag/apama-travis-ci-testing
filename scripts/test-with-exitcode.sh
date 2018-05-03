@@ -1,4 +1,4 @@
-#!/usr/local/bin/expect -f
+#!/usr/bin/expect -f
 
 cd test
 spawn pysys run -v INFO
