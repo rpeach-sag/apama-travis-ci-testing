@@ -1,2 +1,2 @@
 . ./softwareag/Apama/bin/apama_env
-expect -f ./test-with-exitcode.sh
+expect -f ./scripts/test-with-exitcode.sh
