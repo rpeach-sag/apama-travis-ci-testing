@@ -1,3 +1,4 @@
+cd test
 spawn pysys run -vINFO
 expect {
 	"Test final outcome:  PASSED" { exit 0 }
