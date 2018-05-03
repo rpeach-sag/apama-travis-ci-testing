@@ -1,4 +1,4 @@
-spawn "/tmp/apama_10.2.0.1_amd64_linux/install -installDir $::env(PWD)/softwareag"
+spawn /tmp/apama_10.2.0.1_amd64_linux/install -installDir $::env(PWD)/softwareag
 expect "Enter:"
 send "\n"
 expect "Installation directory:"
