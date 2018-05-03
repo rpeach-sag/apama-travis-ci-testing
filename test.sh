@@ -1,3 +1,3 @@
 . ./softwareag/Apama/bin/apama_env
 cd test
-pysys run -vINFO
+expect -f ./test-exitcode-wrapper.sh
