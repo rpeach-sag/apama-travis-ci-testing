@@ -1,4 +1,5 @@
 **/*.log
 config
 output
+Output
 **/*.pyc
