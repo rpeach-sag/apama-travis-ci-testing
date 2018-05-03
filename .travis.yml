@@ -1,7 +1,10 @@
+env:
+  - LOGLEVEL=INFO
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install unzip
   - sudo apt-get install expect
+  - sudo apt-get install openssl
 install:
   - ./install-apama.sh
 script:
