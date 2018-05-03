@@ -1,12 +1,18 @@
-env:
-  - LOGLEVEL=INFO
-before_install:
+before_install: # install dependencies
   - sudo apt-get -qq update
   - sudo apt-get install unzip
   - sudo apt-get install expect
-  - sudo apt-get install openssl
-install:
-  - ./install-apama.sh
-script:
-  - ./build.sh
-  - ./test.sh
+  
+install: # install apama
+  - wget https://downloads.apamacommunity.com/apama/10.2.0.1/apama_10.2.0.1_amd64_linux.zip  -O /tmp/apama.zip
+  - unzip /tmp/apama.zip -d /tmp/
+  - ./scripts/install-apama-prompts.sh7
+  
+before_script: # add various apama utils to the path (eg. engine_deploy)
+  - source ./softwareag/Apama/bin/apama_env
+  
+script: 
+  # Build the project
+  - engine_deploy --outputDeployDir output src
+  # Test the project
+  - ./scripts/test-with-exitcode.sh

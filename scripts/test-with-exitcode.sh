@@ -1,5 +1,7 @@
+#!/usr/local/bin/expect -f
+
 cd test
-spawn pysys run -vINFO
+spawn pysys run -v INFO
 expect {
 	"Test final outcome:  PASSED" { 
 		expect eof
