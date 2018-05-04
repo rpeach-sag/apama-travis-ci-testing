@@ -1,5 +1,5 @@
 env:
- - LD_LIBRARY_PATH="$PWD/softwareag/Apama/third_party/python/libs"
+ - LD_LIBRARY_PATH="/usr/lib/x86_64-linux-gnu/"
 
 before_install: # install dependencies
   - sudo apt-get -qq update
