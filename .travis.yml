@@ -1,3 +1,6 @@
+env:
+ - LD_LIBRARY_PATH=./softwareag/Apama/third_party/python/libs
+
 before_install: # install dependencies
   - sudo apt-get -qq update
   - sudo apt-get install unzip
